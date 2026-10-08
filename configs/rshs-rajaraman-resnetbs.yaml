@@ -1,0 +1,14 @@
+model: rajaraman_resnetbs
+dataset_root: ../../../datasets/rshs
+manifest: manifest.csv
+view: frontal
+weights: ../../../models/rajaraman-resnetbs/resnet_bs.h5
+output_dir: ../../../results/inferences/rshs-bonesuppression-rajaraman-resnetbs
+save_bone: true
+resize_to_original: false
+input_size: 256
+half_precision: false
+device: cuda
+num_workers: 2
+writer_threads: 2
+log: run.log

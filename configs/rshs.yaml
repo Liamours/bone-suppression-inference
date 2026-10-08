@@ -1,0 +1,14 @@
+model: qureai
+dataset_root: ../../../datasets/rshs
+manifest: manifest.csv
+view: frontal
+weights: ../../../models/bone-suppression/bone_suppression.ts
+output_dir: ../../../results/inferences/rshs-bonesuppression-qureai
+save_bone: true
+resize_to_original: false
+input_size: 1024
+half_precision: true
+device: cuda
+num_workers: 2
+writer_threads: 2
+log: run.log
